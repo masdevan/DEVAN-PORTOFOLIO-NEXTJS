@@ -49,7 +49,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="bg-[#111111] border-gray-800 text-white">
                 <SheetHeader>
-                  <SheetTitle>Menu Navigation</SheetTitle>
+                  <SheetTitle className="text-white">Menu Navigation</SheetTitle>
                 </SheetHeader>
 
                 <div className="flex flex-col gap-5 pt-8">
