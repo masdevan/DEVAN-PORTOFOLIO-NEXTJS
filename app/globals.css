@@ -94,3 +94,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #6b6b6b;
 }
+
+.bg-sidebar {
+  @apply bg-[#161616] border-r border-gray-800;
+}
