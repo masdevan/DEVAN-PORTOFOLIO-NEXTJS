@@ -10,18 +10,18 @@ export default function TermsOfServicePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col">
+    <div className="min-h-screen bg-[#111111] text-white flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto px-8 py-24 max-w-[1200px]">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+          <span className="text-white">
             Terms of Service
           </span>
         </h1>
         <div className="prose prose-invert max-w-3xl mx-auto text-gray-300">
           <p>Welcome to Devan Yudistira Sugiharta's Portfolio!</p>
           <p>
-            These terms and conditions outline the rules and regulations for the use of Devan Yudistira Sugiharta's Website, located at <a href="https://devansugiharta.my.id" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:underline">devansugiharta.my.id</a>.
+            These terms and conditions outline the rules and regulations for the use of Devan Yudistira Sugiharta's Website, located at <a href="https://devansugiharta.my.id" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:underline">devansugiharta.my.id</a>.
           </p>
           <p>
             By accessing this website we assume you accept these terms and conditions. Do not continue to use Devan Yudistira Sugiharta's Portfolio if you do not agree to take all of the terms and conditions stated on this page.

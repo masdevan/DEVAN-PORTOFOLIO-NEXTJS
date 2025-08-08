@@ -58,55 +58,42 @@ export function SkillsSection({ skills }: SkillsSectionProps) {
   }, [skills, activeCategory]);
 
   return (
-    <section id="skills" className="py-20 bg-black">
-      <div className="container mx-auto px-8 max-w-[1200px]">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-          <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
-            Skills & Technologies
-          </span>
+    <section id="skills" className="py-12 md:py-20 bg-[#111111]">
+      <div className="container mx-auto px-4 sm:px-8 max-w-[1300px]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 md:mb-6 text-white">
+          Skills & Technologies
         </h2>
-        <p className="text-lg text-gray-300 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-gray-300 text-center mb-8 md:mb-12 max-w-2xl mx-auto">
           Dive into my diverse skill set. These are some of the core technologies and platforms I master to transform ideas into impactful digital experiences.
         </p>
-
-        
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 md:mb-12">
           {categories.map(category => (
             <Button
               key={category}
               variant={activeCategory === category ? "default" : "outline"}
               onClick={() => setActiveCategory(category)}
-              className={`
-                ${activeCategory === category 
-                  ? "bg-purple-600 hover:bg-purple-700 text-white" 
-                  : "border-purple-600 text-purple-400 bg-purple-950/20 hover:bg-purple-600 hover:text-white"
-                }
-                transition-colors duration-200
-              `}
+              className={`text-xs sm:text-sm py-1 px-3 h-auto ${activeCategory === category
+                ? "bg-gray-200 hover:bg-gray-300 text-black"
+                : "border-gray-600 text-gray-200 bg-transparent hover:bg-gray-800 hover:text-white"}`}
             >
               {category}
             </Button>
           ))}
         </div>
-
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-6xl mx-auto">
           {filteredSkills.map((skill, index) => {
             const IconComponent = getIconComponent(skill.icon)
             return (
               <Card 
                 key={index} 
-                className="bg-purple-950/20 border-purple-900/30 
-                           hover:border-purple-600/50 transition-all duration-300 
-                           hover:shadow-lg hover:shadow-purple-600/20 
-                           transform hover:-translate-y-2 hover:scale-105"
+                className="bg-[#161616] border border-gray-800 hover:border-gray-500 transition-all duration-300 hover:shadow-lg hover:shadow-black/30"
               >
                 <CardContent className="p-6 text-center flex flex-col items-center">
-                  <div className="p-4 bg-purple-900/50 border border-purple-700/50 rounded-full mb-4">
-                    <IconComponent className="w-10 h-10 text-purple-400" />
+                  <div className="p-2 sm:p-3 md:p-4 bg-[#1a1a1a] border border-gray-700 mb-2 sm:mb-4">
+                    <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-gray-300" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">{skill.name}</h3>
-                  <Badge variant="outline" className="border-purple-600 text-purple-300">
+                  <Badge variant="outline" className="text-xs border-gray-600 text-gray-300">
                     {skill.category}
                   </Badge>
                 </CardContent>
@@ -115,7 +102,7 @@ export function SkillsSection({ skills }: SkillsSectionProps) {
           })}
         </div>
         {filteredSkills.length === 0 && (
-          <p className="text-center text-gray-400 mt-8 text-xl">No skills found for this category.</p>
+          <p className="text-center text-gray-400 mt-8 text-base sm:text-xl">No skills found for this category.</p>
         )}
       </div>
     </section>
