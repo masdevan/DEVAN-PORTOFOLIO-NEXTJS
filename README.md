@@ -3,5 +3,5 @@
 </h1>
 
 <p align="center">
-  <img src="https://i.imgur.com/eI5D3M0.png" width="600px"/>
+  <img src="blob:https://imgur.com/bba04bb4-3f61-4ff2-9f71-d11e372a900f" width="100%"/>
 </p>
