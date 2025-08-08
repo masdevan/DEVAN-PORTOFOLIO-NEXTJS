@@ -3,5 +3,5 @@
 </h1>
 
 <p align="center">
-  <img src="https://trello.com/1/cards/689205d6ad24e09a84cd6224/attachments/68961b436af9a4af2704ce35/download/Screenshot_2025-08-08_224330.png" width="600px"/>
+  <img src="https://i.imgur.com/eI5D3M0.png" width="600px"/>
 </p>
